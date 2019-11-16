@@ -1,0 +1,71 @@
+Latest Version of Spring Boot: 2.2.1
+
+Spring Boot is a: is system to create stand-alone Spring applications.
+Written in Java
+embeded Tomcat Jetty Undertow.
+
+Opiniated Default configuration.  ( Why in spring boot opiniated is used.)
+
+Spring security implementation to be done
+Dispatcher Servelet
+AOP Aspect Oriented Programming
+
+
+Security in Spring Boot: spring-boot-starter-security dependency
+WebSecurityConfigureAdapter Class ko extend karna hota hai
+
+Diff b/w JPA and Hibernate: JPA is a specification/interface whereas Hibernate is one of the JPA implementation.
+
+
+Connecting Spring Boot with external DB, is done in the following steps.
+
+Step 1 -
+
+The first step to connect the database like Oracle or MySql is adding the dependency for your database connector to pom.xml.
+
+Step 2 -
+
+The next step is the elimination of H2 Dependency from pom.xml
+
+Step 3 -
+
+Step 3 includes the schema and table to establish your database.
+
+Step 4 -
+
+The next step is configuring of the database by using Configure application.properties to connect to your database.
+
+Step 5-
+
+And the last step is to restart your device and your connection is ready to use.
+
+
+You can enable HTTP/2 support in Spring Boot as follows: 
+server.http2.enabled=true
+
+@Bean public ConfigurableServletWebServerFactory tomcatCustomizer() {
+
+    TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory(); 
+   factory.addConnectorCustomizers(connector -> connector.addUpgradeProtocol(new Http2Protocol())); 
+
+	return factory; 
+
+}
+
+Swaagger
+
+Developer branch
+Master branch
+
+code lena hai 
+
+create pull/merge request
+
+
+merge conflict
+
+tr request karna, merge karna
+
+push
+
+Swaagger
